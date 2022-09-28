@@ -2,7 +2,7 @@
 pragma solidity >=0.4.4 <0.7.0;
 pragma experimental ABIEncoderV2;
 
-// @tittle Enums
+// @tittle Modifiers
 // @author catellaTech
 
 contract modifiers_public_private_internal  {

@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.4 <0.7.0;
 
+// @tittle Intigers
+// @author catellaTech
+
 contract intigerVar{
     // unsigned integer variables
     uint myFirstIntiger;

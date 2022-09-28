@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.4 <0.7.0;
 
-// @tittle Enums
+// @tittle Units Time
 // @author catellaTech
 
 contract unitsTime {
