@@ -2,7 +2,7 @@
 pragma solidity >=0.4.4 <0.7.0;
 pragma experimental ABIEncoderV2;
 
-// @tittle Functions
+// @title Functions
 // @author catellaTech
 
 contract functions {
