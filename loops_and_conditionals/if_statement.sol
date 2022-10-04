@@ -6,9 +6,8 @@ pragma experimental ABIEncoderV2;
 // @author catellaTech
 
 contract if_statement {
-    
     //Numero ganador
-    function probarSuerte(uint _numero) public pure returns (bool) {
+    function probarSuerte(uint256 _numero) public pure returns (bool) {
         bool ganador;
         if (_numero == 100) {
             ganador = true;
@@ -29,12 +28,12 @@ contract if_statement {
 
     //Calculamos el valor absoluto de un numero
 
-    function valorAbsoluto(int _k) public pure returns (uint) {
-        uint valor_absoluto_numero;
+    function valorAbsoluto(int256 _k) public pure returns (uint256) {
+        uint256 valor_absoluto_numero;
         if (_k < 0) {
-            valor_absoluto_numero = uint(-_k);
+            valor_absoluto_numero = uint256(-_k);
         } else {
-            valor_absoluto_numero = uint(_k);
+            valor_absoluto_numero = uint256(_k);
         }
 
         return valor_absoluto_numero;
@@ -42,7 +41,7 @@ contract if_statement {
 
     //Devolver true si el numero introducido es par y tiene tres cifras
 
-    function parTresCifras(uint _numero) public pure returns (bool) {
+    function parTresCifras(uint256 _numero) public pure returns (bool) {
         bool flag;
 
         if ((_numero % 2 == 0) && (_numero >= 100) && (_numero < 999)) {

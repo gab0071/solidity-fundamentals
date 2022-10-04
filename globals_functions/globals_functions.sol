@@ -8,7 +8,7 @@ contract globals_functions {
     }
 
     // now function
-    function Now() public view returns (uint) {
+    function Now() public view returns (uint256) {
         return now;
     }
 
@@ -18,12 +18,12 @@ contract globals_functions {
     }
 
     // block.difficulty function
-    function blockDifficulty() public view returns (uint) {
+    function blockDifficulty() public view returns (uint256) {
         return block.difficulty;
     }
 
     // block.number function
-    function blockNumber() public view returns (uint) {
+    function blockNumber() public view returns (uint256) {
         return block.number;
     }
 
@@ -33,7 +33,7 @@ contract globals_functions {
     }
 
     // tx.gasprice function
-    function txGasPrice() public view returns (uint) {
+    function txGasPrice() public view returns (uint256) {
         return tx.gasprice;
     }
 }
