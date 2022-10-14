@@ -1,10 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.4 < 0.7.0;
+pragma solidity >=0.4.4 <0.7.0;
 pragma experimental ABIEncoderV2;
 
 // @tittle Factory
 // @author catellaTech
-
 
 /*
  -------------------------------------------|
@@ -27,47 +26,55 @@ contract evaluation_system {
     }
 
     // Mapping to relate the hash of the student's identity with his exam grade
-    mapping (bytes32 => uint) Qualy;
+    mapping(bytes32 => uint256) Qualy;
 
     // Dynamic array of students requesting exam revisions
-    string [] reviews;
+    string[] reviews;
 
     // Control of the functions executable by the teacher
     // Modifier
-     modifier teacherOnly(address _address){
+    modifier teacherOnly(address _address) {
         // Requires that the address entered by parameter is equal to the owner of the contract
-        require(_address == teacher, "You do not have permissions to run this function.");
+        require(
+            _address == teacher,
+            'You do not have permissions to run this function.'
+        );
         _;
     }
 
-    // Events 
-    event students_evaluated(bytes32, uint); 
+    // Events
+    event students_evaluated(bytes32, uint256);
     event revision_event(string);
 
+    // Function to evaluate students
+    function Evaluate(string memory _idStudents, uint256 _qualy)
+        public
+        teacherOnly(msg.sender)
+    {
+        // Hash of the student ID
+        bytes32 hash_idStudents = keccak256(abi.encodePacked(_idStudents));
 
-    // Function to evaluate students 
-    function Evaluate(string memory _idStudents, uint _qualy) public teacherOnly(msg.sender){
-      // Hash of the student ID
-      bytes32 hash_idStudents = keccak256(abi.encodePacked(_idStudents));
+        // Relation between the hash of the student's identification and his grade
+        Qualy[hash_idStudents] = _qualy;
 
-      // Relation between the hash of the student's identification and his grade
-      Qualy[hash_idStudents] = _qualy;
-
-      // Emit event students_evaluated
-        emit students_evaluated(hash_idStudents,_qualy);
+        // Emit event students_evaluated
+        emit students_evaluated(hash_idStudents, _qualy);
     }
 
     // Function to view a student's grades
-    function SeeYourNote(string memory _idStudents) public view returns(uint){
+    function SeeYourNote(string memory _idStudents)
+        public
+        view
+        returns (uint256)
+    {
         // Hash of the student ID
         bytes32 hash_idStudents = keccak256(abi.encodePacked(_idStudents));
         // Note associated with the student's hash
-        uint students_note = Qualy[hash_idStudents];
+        uint256 students_note = Qualy[hash_idStudents];
         // display the note
         return students_note;
-
     }
-    
+
     // Function to request a review of the exam
     function Review(string memory _idStudents) public {
         // Store the student's identity in an array
@@ -77,7 +84,12 @@ contract evaluation_system {
     }
 
     // Function to see the students who have requested exam review
-    function SeeReviews() public view teacherOnly(msg.sender) returns(string [] memory){
+    function SeeReviews()
+        public
+        view
+        teacherOnly(msg.sender)
+        returns (string[] memory)
+    {
         // Return the student identities
         return reviews;
     }
