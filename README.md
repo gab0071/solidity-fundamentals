@@ -1,66 +1,34 @@
-<h1 aling="center">Smart Contracts and Blockchain course from A to Z 🌟</h1>
+<h1 aling="center">Learn Solidity with me 📚⛓✨</h1>
 
-* Do you want to learn to program in the language that allows you to create Smart Contracts?
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-* Are you intimidated by advances in new ways of storing information and want to adapt to this technological change?
+<p> I love the Solidity programming language, I wanted to leave a guide for newcomers who want to dare to navigate this beautiful process of building smart contracts with Solidity.</p>
+<p>You will be able to find all the basics well explained, all taken from the best resources that exist in the web3 space.</p>
+<p>Feel free to write me if you have any questions, or if you just want advice on where to start.</p>
 
-* Are you an entrepreneur who wants to transform your business with the power of Blockchain technology but you don't know how to achieve it?
+<h2> Installing / Getting started </h2>
 
-If the answer to any of these questions is yes, then this course is for you.
+```
+npm install
+```  
+<p>Drop all necessary dependencies</p>
+<hr>
 
-## Course Description
+<h2> Technologies / Built With </h2>
 
-Blockchain is one of the most cutting-edge technological fields that everyone wants to be in. And it is that Blockchain is changing people's lives just like electricity did 100 years ago. The words Blockchain, Blockchain, Bitcoin, Ethereum are increasingly present in the lives of all of us, the cryptocurrency revolution is already a reality.
+- Solidity
+- Remix -Ethereum-IDE
+- Metamask
+- Fake ETH (🚨 Note: <a href="https://goerlifaucet.com/"> Goerli Faucet</a>)
 
-This course is unique, because we have designed it for you to learn to program Smart Contracts or also known as Smart Contracts. It is the only course in all of Udemy in Spanish that covers what is necessary to be an expert in programming Smart Contracts in Ethereum with Solidity.
+<h2>Prettier definition </h2>
+<p> Prettier offers support for multiple languages and frameworks. What <Prettier> offers is to take your code and "re-format" it based on the defined settings thus maintaining a consistent style. Making it much more readable and without worrying about how you write it initially.</p>
 
-## What are we going to learn?
+<p> <strong> Link to install prettier: <a href="https://prettier.io/docs/en/install.html">Prettier</a> <strong></p>
+<p> <strong> Link to install a prettier plugin for automatically formatting your Solidity code: <a href="https://www.npmjs.com/package/prettier-plugin-solidity">Prettier</a> <strong></p>
 
-The course has been designed to cover the basic pillars of programming in Solidity, starting with the basic concepts of programming in Solidity, following the programming of real projects with Solidity and ending with a real project of more than 500 lines of code for understand everything you need to be an expert in creating Smart Contracts.
+<h2>Contributing</h2>
 
-Therefore, we are going to see how to use Remix for programming Smart Contracts, we will see the properties of transactions through code, the different types of variables and operations, as well as the data structures to store the necessary information, we will also see all kinds of function logic and loops with conditionals. And if that were not enough, we will see how to create a Smart Contracts factory and connect files stored in IPFS with our contract. All this will be accompanied by endless real projects to put everything learned into use.
+<p> Contributions are always welcome! Open a PR or an issue!</p>
 
-In the course we will focus on several blocks, the first of these will consist of:
-
-### Block 1: Programming fundamentals with Solidity
-
-* We will learn all the tools for the creation of Smart Contracts and for storing their code
-
-* We will see the properties of transactions and blocks through code to relate theoretical concepts with practice
-
-* We will go through all the variables and operations that are essential
-
-* We will see the data structures for information storage in Blockchain
-
-* We will program functions from the most basic to the most advanced
-
-* We will understand how to interact with several contracts at the same time and perform contract inheritance
-
-* We will have the possibility to carry out safe operations with the SafeMath library
-
-* We will create our own libraries
-
-* We will see how to create a Smart Contracts factory and connect the distributed file network (IPFS) with our Smart Contracts
-
-### Block 2: Real projects with Smart Contracts
-
-* The second block will focus on carrying out real projects to put into practice everything learned in the first block, the projects that we will carry out will be:
-
-* University evaluation system
-
-* Online voting system with records in Blockchain
-
-* Creation and use of an ERC-20 Token
-
-* Creation of a payment system with Tokens for DISNEY
-
-* Implementation of a Lottery system
-
-* Creation of a management system for a COVID-19 medical center through Blockchain
-
-### Block 3: Final course project
-
-If all this were not enough, we will end with a third block where we will have a real project with more than 500 lines of code that will consist of programming a Telemedicine Service in Solidity.
-
-This course is ideal for anyone who wants to gain knowledge about programming Smart Contracts.
-
+<p> Thank you! 😊 </p>
