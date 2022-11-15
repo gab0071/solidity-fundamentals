@@ -13,9 +13,16 @@
     <img src="https://img.shields.io/github/issues/gab0071/solidity-fundamentals" alt="Badge showing the total of project issues"/>
   </a>
 
+  <a href="https://www.npmjs.com/package/prettier-plugin-solidity" target="_blank">
+    <img src="https://img.shields.io/badge/prettier%20plugin%20solidity-1.0.0-pink.svg" alt="Badge showing the prettier plugin solidity version"/>
+  </a>
+
   <a href="https://github.com/maurodesouza/profile-readme-generator/blob/master/LICENSE.md" target="_blank">
     <img alt="Badge showing project license type" src="https://img.shields.io/github/license/maurodesouza/profile-readme-generator?color=f85149">
   </a>
+
+  <br>
+  <br>
 
 <p> I love the Solidity programming language, I wanted to leave a guide for newcomers who want to dare to navigate this beautiful process of building smart contracts with Solidity.</p>
 <p>You will be able to find all the basics well explained, all taken from the best resources that exist in the web3 space.</p>
