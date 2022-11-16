@@ -8,7 +8,7 @@ import "@openzeppelin/contracts@4.5.0/access/Ownable.sol";
 contract loteria is ERC20, Ownable {
 
     // ============================================
-    // Gestion de los tokens
+    // Gestion de los tokens 
     // ============================================
 
     // Direccion del contrato NFT del proyecto
