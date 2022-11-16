@@ -43,6 +43,9 @@ npm install
 - Remix -Ethereum-IDE
 - Metamask
 - Fake ETH (🚨 Note: <a href="https://goerlifaucet.com/"> Goerli Faucet</a>)
+- <a href="https://www.npmjs.com/package/@openzeppelin/contracts"> OpenZeppelin </a>
+- <a href="https://www.npmjs.com/package/ganache?activeTab=readme"> Ganache CLI  </a>
+- <a href="https://trufflesuite.com/ganache/"> Ganache GUI  </a>
 
 <h2>Prettier definition </h2>
 <p> Prettier offers support for multiple languages and frameworks. What <Prettier> offers is to take your code and "re-format" it based on the defined settings thus maintaining a consistent style. Making it much more readable and without worrying about how you write it initially.</p>
