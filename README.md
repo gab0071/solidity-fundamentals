@@ -28,6 +28,8 @@
 <p>You will be able to find all the basics well explained, all taken from the best resources that exist in the web3 space.</p>
 <p>Feel free to write me if you have any questions, or if you just want advice on where to start.</p>
 
+<p>If you wanna learn solidity advanced: Click <a href="https://github.com/gab0071/solidity-advanced">here</a></p>
+
 <h2> Installing / Getting started </h2>
 
 ```bash
