@@ -30,9 +30,18 @@
 
 <h2> Installing / Getting started </h2>
 
-```
-npm install
-```
+```bash
+
+# Clone this project
+$ git clone https://github.com/gab0071/solidity-fundamentals
+
+# Access
+$ cd solidity-fundamentals
+
+# Install dependencies
+$ yarn
+
+``` 
 
 <p>Drop all necessary dependencies</p>
 <hr>
