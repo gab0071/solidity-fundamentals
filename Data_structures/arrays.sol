@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.4 <0.7.0;
+pragma solidity 0.8.18;
 
 
 // @tittle Arrays
@@ -16,7 +16,7 @@ contract arrays {
     string[15] array_strings;
     
     //Dynamic array of integers
-    uint [] public dynamic_array_integers;
+    uint[] public dynamic_array_integers;
     
     struct Person{
         string name;
@@ -29,7 +29,7 @@ contract arrays {
     function modificar_array() public{
      //dynamic_array_integers.push(_number);
      //dynamic_array_people.push(Person(_name, _age));
-       array_intigers[2]=56;
+       array_intigers[2] = 56;
     }
     
     uint public test = array_intigers[2];

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.4;
+pragma solidity 0.8.18;
 
 contract data_structures {
 
@@ -14,13 +14,13 @@ contract data_structures {
     Customer customer_1 = Customer(1, "Joan", "joan@gmail.com");
 
     // Array de uints de longitud fija 
-    uint256 [5] public fixed_list_uints = [1,2,3,4,5];
+    uint256[5] public fixed_list_uints = [1,2,3,4,5];
 
     // Array dinamico de uints 
-    uint256 [] dynamic_list_uints;
+    uint256[] dynamic_list_uints;
 
     // Array dinamico de tipo cliente 
-    Customer [] public dynamic_list_customer;
+    Customer[] public dynamic_list_customer;
 
     // Nuevos datos en un array
     function array_modification (uint256 _id, string memory _name, string memory _email) public {
@@ -29,9 +29,9 @@ contract data_structures {
     }
 
     // Mappings 
-    mapping (address => uint256) public address_uint;
-    mapping (string => uint256 []) public string_listUnits;
-    mapping (address => Customer) public address_dataStructure;
+    mapping(address => uint256) public address_uint;
+    mapping(string => uint256[]) public string_listUnits;
+    mapping(address => Customer) public address_dataStructure;
 
     // Asignar un numero a una direccion 
     function assignNumber (uint256 _number) public {
