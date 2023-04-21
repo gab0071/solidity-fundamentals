@@ -6,7 +6,7 @@ pragma experimental ABIEncoderV2;
 // Implementacion de la libreria SafeMath para realizar las operaciones de manera segura
 // Fuente: "https://gist.github.com/giladHaimov/8e81dbde10c9aeff69a1d683ed6870be"
 
-library SafeMath{
+library SafeMath {
     // Restas
     function sub(uint256 a, uint256 b) internal pure returns (uint256) {
       assert(b <= a);
