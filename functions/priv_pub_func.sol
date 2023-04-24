@@ -7,7 +7,6 @@ pragma experimental ABIEncoderV2;
 
 contract functions {
     /* Practice #1: add within an address array, the address of the person executing the function */
-
     address [] public addresses;
 
     function newAddress() public {

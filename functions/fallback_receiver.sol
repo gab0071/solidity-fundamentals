@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.4;
+pragma solidity 0.8.18;
 
 /* ¿fallback() y receive()?
 
@@ -20,15 +20,14 @@ msg.data -> El calldata completo, que es un area no modificable y no persistente
       receive()   fallback()
 */
 
-contract Fallback_Receive {
-
-    event log(string _name, address _sender, uint _amount, bytes _data);
+contract fallback_receiver {
+    event Log(string _name, address indexed _sender, uint _amount, bytes _data);
 
     fallback() external payable {
-        emit log("fallback", msg.sender, msg.value, msg.data);
+        emit Log("fallback", msg.sender, msg.value, msg.data);
     }
 
     receive() external payable {
-        emit log("receive", msg.sender, msg.value, "");
+        emit Log("receive", msg.sender, msg.value, "");
     }
 }
