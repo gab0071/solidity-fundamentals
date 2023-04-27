@@ -35,11 +35,10 @@ contract ethSend {
 
 
 contract ethReceiver {
-
-    event log(uint amount, uint gas);
+    event Log(uint amount, uint gas);
 
     receive() external payable {
-        emit log(address(this).balance, gasleft());
+        emit Log(address(this).balance, gasleft());
     }
 
 } 

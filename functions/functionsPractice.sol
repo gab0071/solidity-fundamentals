@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.4.4 <0.7.0;
-pragma experimental ABIEncoderV2;
+pragma solidity 0.8.18;
+pragma abicoder v2;
 
 // @title Functions
 // @author catellaTech
 
-contract functions {
+contract functionsPractice {
     /* Practice #1: add within an address array, the address of the person executing the function */
-    address [] public addresses;
+    address[] public addresses;
 
     function newAddress() public {
         addresses.push(msg.sender);

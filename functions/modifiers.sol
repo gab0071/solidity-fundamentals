@@ -6,18 +6,26 @@ pragma abicoder v2;
 // @author catellaTech
 
 contract modifiers {
-    // View modifier
+    // state variables 
+    uint x = 10;
     string[] students_list;
-    
+    mapping(address => wallet) walletCash;
+    struct wallet {
+        string person_name;
+        address person_address;
+        uint person_money;
+    }
+
+
     function newStudent(string memory _student) public {
         students_list.push(_student);
     }
     
+    // View modifier
     function seeStudent(uint _position) public view returns(string memory) {
         return students_list[_position];
     }
     
-    uint x = 10;
     function sumAx(uint _a) public view returns(uint) {
         return x + _a;
     }
@@ -29,15 +37,6 @@ contract modifiers {
     }
     
     // Payable modifier
-    
-    mapping(address => wallet) walletCash;
-    
-    struct wallet{
-        string person_name;
-        address person_address;
-        uint person_money;
-    }
-    
     function Pay(string memory _personName, uint _amount) public payable {
         wallet memory my_wallet;
         my_wallet = wallet(_personName, msg.sender, _amount);
@@ -47,6 +46,4 @@ contract modifiers {
     function seeBalance() public view returns(wallet memory){
         return walletCash[msg.sender];
     }
-    
-    
 }
